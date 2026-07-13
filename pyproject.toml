@@ -1,0 +1,32 @@
+[project]
+name = "tarify"
+version = "0.1.0"
+description = "Price calculator for freelancers that helps create sustainable pricing for every project."
+readme = "README.md"
+requires-python = ">=3.13.14"
+dependencies = [
+    "fastapi>=0.139.0",
+    "jinja2>=3.1.6",
+    "pydantic>=2.13.4",
+    "python-multipart>=0.0.32",
+    "uvicorn>=0.51.0",
+]
+
+[dependency-groups]
+dev = [
+    "httpx>=0.28.1",
+    "pytest>=9.1.1",
+    "ruff>=0.15.20",
+]
+
+[tool.ruff]
+line-length = 90
+target-version = "py313"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["app"]
+
+
