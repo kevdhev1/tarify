@@ -1,0 +1,5 @@
+from decimal import Decimal
+
+DEFAULT_BILLABLE_HOURS = 100
+DEFAULT_SAFETY_MARGIN_RATE = Decimal("10")
+DEFAULT_INCOME_TAX_RATE = Decimal("0")
