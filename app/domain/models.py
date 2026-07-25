@@ -2,7 +2,7 @@ from dataclasses import dataclass
 from decimal import Decimal
 
 
-@dataclass
+@dataclass(slots=True)
 class PricingInput:
     desired_income: Decimal
     monthly_expenses: Decimal
@@ -13,7 +13,7 @@ class PricingInput:
     expected_price: Decimal | None = None
 
 
-@dataclass
+@dataclass(slots=True)
 class Breakdown:
     desired_income: Decimal
     monthly_expenses: Decimal
@@ -29,8 +29,16 @@ class Breakdown:
     sustainable_project_price: Decimal
 
 
-@dataclass
+@dataclass(slots=True)
 class PricingResult:
     hourly_rate: Decimal
     sustainable_project_price: Decimal
     breakdown: Breakdown
+
+
+@dataclass(slots=True)
+class PriceComparison:
+    difference_percentage: Decimal
+    category: str
+    justification: str
+    color: str
