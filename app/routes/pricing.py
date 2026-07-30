@@ -8,4 +8,10 @@ router = APIRouter()
 
 @router.get("/", response_class=HTMLResponse)
 def home(request: Request):
-    return templates.TemplateResponse(request=request, name="index.html")
+    return templates.TemplateResponse(
+        request=request,
+        name="index.html",
+        context={
+            "errors": {},
+        },
+    )
