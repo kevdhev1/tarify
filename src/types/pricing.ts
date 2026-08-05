@@ -1,0 +1,37 @@
+export interface PricingInput {
+  desiredIncome: number;
+  monthlyExpenses: number;
+  billableHours: number;
+  projectHours: number;
+  safetyMarginRate: number;
+  incomeTaxRate: number;
+  expectedPrice?: number;
+}
+
+export interface Breakdown {
+  desiredIncome: number;
+  monthlyExpenses: number;
+  requiredMonthlyIncome: number;
+  billableHours: number;
+  projectHours: number;
+  baseHourlyRate: number;
+  safetyMarginRate: number;
+  safetyMarginAmount: number;
+  incomeTaxRate: number;
+  taxAmount: number;
+  hourlyRate: number;
+  sustainableProjectPrice: number;
+}
+
+export interface PricingResult {
+  hourlyRate: number;
+  sustainableProjectPrice: number;
+  breakdown: Breakdown;
+}
+
+export interface PriceComparison {
+  differencePercentage: number;
+  category: string;
+  justification: string;
+  color: string;
+}
