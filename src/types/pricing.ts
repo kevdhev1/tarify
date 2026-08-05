@@ -1,3 +1,17 @@
+export interface PricingFormValues {
+  desiredIncome: string;
+  monthlyExpenses: string;
+  billableHours: string;
+  projectHours: string;
+  safetyMarginRate: string;
+  incomeTaxRate: string;
+  expectedPrice: string;
+}
+
+export type PricingFormErrors = Partial<
+  Record<keyof PricingFormValues, string>
+>;
+
 export interface PricingInput {
   desiredIncome: number;
   monthlyExpenses: number;
