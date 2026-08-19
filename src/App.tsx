@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Header from "@/components/sections/Header/Header";
 import FormSection from "@/components/sections/Form/FormSection";
+import Result from "@/components/sections/Result/Result";
 import type { PricingResult, PriceComparison } from "@/types/pricing";
 
 export default function App() {
@@ -19,6 +20,7 @@ export default function App() {
             setComparison(comparison);
           }}
         />
+        <Result pricingResult={pricingResult} comparison={comparison} />
       </main>
     </>
   );
