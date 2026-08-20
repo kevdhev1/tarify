@@ -4,7 +4,7 @@ import styles from "./Header.module.css";
 export default function Header() {
   return (
     <header className={styles.header}>
-      <div className={styles.icon}>
+      <div className={styles.iconContainer}>
         <CalculatorIcon />
       </div>
       <h1 className={styles.title}>Tarify</h1>

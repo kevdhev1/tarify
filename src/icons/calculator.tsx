@@ -1,10 +1,9 @@
 export default function CalculatorIcon() {
   return (
     <svg
-      className="icon calc"
-      height="200px"
-      width="200px"
+      className="icon calc-icon"
       viewBox="0 0 267.5 267.5"
+      fill="currentColor"
     >
       <g>
         <g>
