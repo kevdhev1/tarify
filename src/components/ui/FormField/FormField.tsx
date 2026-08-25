@@ -21,7 +21,11 @@ export default function FormField({
   className = "",
   ...inputProps
 }: FormFieldProps) {
-  const inputClassName = ["input", error ? "input-error" : "", className]
+  const inputClassName = [
+    styles.input,
+    error ? styles.inputError : "",
+    className,
+  ]
     .filter(Boolean)
     .join(" ");
 
@@ -34,7 +38,7 @@ export default function FormField({
         </label>
 
         {tooltip && (
-          <span className={styles.tooltip} title={tooltip}>
+          <span className={styles.tooltip}>
             ⓘ<span className={styles.tooltipText}>{tooltip}</span>
           </span>
         )}

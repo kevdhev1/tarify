@@ -1,0 +1,18 @@
+.formSection {
+    background-color: var(--color-surface);
+    width: 330px;
+    margin: 0 auto;
+    padding: 1rem 1.3rem;
+    border-radius: 15px;
+    box-shadow: var(--shadow-soft-lg);
+}
+
+.title {
+    color: var(--color-text);
+    margin-bottom: 0.4rem;
+    font-size: 1.1rem;
+}
+
+.description {
+    margin-bottom: 1.5rem;
+}

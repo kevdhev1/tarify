@@ -102,7 +102,7 @@ export default function PricingForm({
         step="1"
         min="1"
         placeholder="Ej. 100"
-        tooltip="Número de horas que puedes facturar a tus clientes cada mes. No incluyen tiempo dedicado a administración, aprendizaje o búsqueda de clientes."
+        tooltip="Horas que de verdad puedes facturar a tus clientes cada mes. No incluyen tiempo dedicado a administración, aprendizaje o búsqueda de clientes."
         value={formValues.billableHours}
         onChange={handleChange}
         error={errors.billableHours}
@@ -131,7 +131,7 @@ export default function PricingForm({
         min="0"
         max="99.99"
         placeholder="Ej. 15"
-        tooltip="Porcentaje de impuestos que pagas sobre tus ingresos. Por ejemplo, si pagas 30% de impuestos, ingresa 30."
+        tooltip="Porcentaje de impuestos que pagas sobre tus ingresos."
         value={formValues.incomeTaxRate}
         onChange={handleChange}
         error={errors.incomeTaxRate}
@@ -146,7 +146,7 @@ export default function PricingForm({
         min="0"
         max="100"
         placeholder="Ej. 10"
-        tooltip="Porcentaje adicional que agregas a tu tarifa para cubrir imprevistos, como cambios en el alcance del proyecto o retrasos en los pagos."
+        tooltip="Porcentaje adicional que agregas a tu tarifa para cubrir imprevistos."
         value={formValues.safetyMarginRate}
         onChange={handleChange}
         error={errors.safetyMarginRate}
@@ -165,7 +165,9 @@ export default function PricingForm({
         error={errors.expectedPrice}
       />
 
-      <button type="submit">Calcular Precio</button>
+      <button type="submit" className={styles.calculateBtn}>
+        Calcular precio
+      </button>
     </form>
   );
 }
