@@ -29,8 +29,24 @@ body {
     color: var(--color-text-muted);
 }
 
+ul {
+    list-style: none;
+}
+
 .calc-icon {
     width: 40px;
     height: 40px;
     color: #fff;
+}
+
+.footer-icon {
+    width: 40px;
+    height: 40px;
+    color: var(--color-text-muted);
+    transition: all 0.3s ease-in;
+}
+
+.footer-icon:hover {
+    cursor: pointer;
+    color: var(--color-primary);
 }
