@@ -56,8 +56,8 @@ export default function PricingForm({
 
     if (pricingInput.expectedPrice !== undefined) {
       comparisonResult = comparePrices(
-        result.sustainableProjectPrice,
         pricingInput.expectedPrice,
+        result.sustainableProjectPrice,
       );
     }
 
