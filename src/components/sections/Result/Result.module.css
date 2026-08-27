@@ -1,0 +1,76 @@
+.result {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 15px;
+    padding: 1rem 1.3rem;
+    width: 330px;
+    margin: 0 auto 3rem auto;
+    box-shadow: var(--shadow-soft-lg);
+}
+
+.title {
+    color: var(--color-text);
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.mainData {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-primary);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    gap: 0.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.mainData h2 {
+    font-size: 3.25rem;
+}
+
+.sustainablePrice {
+    font-size: 0.8rem;
+}
+
+.hourlyRateText {
+    text-align: center;
+    max-width: 20ch;
+    font-size: 0.9rem;
+}
+
+.textBold {
+    font-weight: bold;
+}
+
+.explanation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    width: 100%;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid var(--color-border);
+    border-radius: 15px;
+    background-color: var(--background-color);
+}
+
+.textBoldBlack {
+    font-weight: bold;
+    color: var(--color-text);
+}
+
+.disclaimer {
+    display: flex;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid var(--color-border);
+    border-radius: 15px;
+    box-shadow: var(--shadow-soft);
+}

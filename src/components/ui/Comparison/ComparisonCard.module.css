@@ -1,0 +1,61 @@
+.card {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 0.7rem;
+    margin-bottom: 1.5rem;
+    border-radius: 15px;
+}
+
+.redCard {
+    background-color: var(--redCard-bg);
+    border: 1px solid var(--redCard-color);
+    color: var(--redCard-color);
+}
+
+.yellowCard {
+    background-color: var(--yellowCard-bg);
+    border: 1px solid var(--yellowCard-color);
+    color: var(--yellowCard-color);
+}
+
+.greenCard {
+    background-color: var(--greenCard-bg);
+    border: 1px solid var(--greenCard-color);
+    color: var(--greenCard-color);
+}
+
+.blueCard {
+    background-color: var(--blueCard-bg);
+    border: 1px solid var(--blueCard-color);
+    color: var(--blueCard-color);
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 0.7rem;
+    border-radius: 50%;
+}
+
+.redIcon {
+    background-color: var(--redCard-color);
+}
+
+.yellowIcon {
+    background-color: var(--yellowCard-color);
+}
+
+.greenIcon {
+    background-color: var(--greenCard-color);
+}
+
+.blueIcon {
+    background-color: var(--blueCard-color);
+}
+
+.percentage {
+    font-weight: bold;
+}

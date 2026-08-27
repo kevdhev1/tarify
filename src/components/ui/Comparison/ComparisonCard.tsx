@@ -10,28 +10,46 @@ interface ComparisonCardProps {
   comparison: PriceComparison;
 }
 
-const icons = {
-  red: ArrowDown,
-  yellow: Minus,
-  green: Check,
-  blue: ArrowUp,
+const variants = {
+  red: {
+    icon: ArrowDown,
+    card: styles.redCard,
+    iconContainer: styles.redIcon,
+  },
+  yellow: {
+    icon: Minus,
+    card: styles.yellowCard,
+    iconContainer: styles.yellowIcon,
+  },
+  green: {
+    icon: Check,
+    card: styles.greenCard,
+    iconContainer: styles.greenIcon,
+  },
+  blue: {
+    icon: ArrowUp,
+    card: styles.blueCard,
+    iconContainer: styles.blueIcon,
+  },
 };
 
 export default function ComparisonCard({ comparison }: ComparisonCardProps) {
-  const Icon = icons[comparison.color];
+  const variant = variants[comparison.color];
+  const Icon = variant.icon;
 
   return (
-    <div className={styles.card}>
-      <div className={styles.icon}>
+    <div className={`${styles.card} ${variant.card}`}>
+      <div className={`${styles.icon} ${variant.iconContainer}`}>
         <Icon />
       </div>
 
       <div className={styles.cardContent}>
-        <h4>{comparison.category}</h4>
         <p>
-          {comparison.justification}. Actualmente, la diferencia entre el precio
-          sostenible y tu precio esperado es de{" "}
-          <strong>{formatPercentage(comparison.differencePercentage)}</strong>
+          <strong>{comparison.category}</strong>. Actualmente, la diferencia
+          entre precios es de{" "}
+          <span className={styles.percentage}>
+            {formatPercentage(comparison.differencePercentage)}
+          </span>
         </p>
       </div>
     </div>

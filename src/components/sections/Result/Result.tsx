@@ -14,29 +14,31 @@ export default function Result({ pricingResult, comparison }: ResultProps) {
 
   return (
     <section className={styles.result}>
-      <h3>Resultado</h3>
+      <h3 className={styles.title}>Resultado</h3>
 
-      <div>
-        <p>PRECIO SOSTENIBLE</p>
+      <div className={styles.mainData}>
+        <p className={styles.sustainablePrice}>PRECIO SOSTENIBLE</p>
         <h2>{formatCurrency(pricingResult.sustainableProjectPrice)}</h2>
-        <p>
-          Tarifa recomendada por hora:
-          <span>{formatHourlyRate(pricingResult.hourlyRate)}</span>
+        <p className={styles.hourlyRateText}>
+          Tarifa recomendada por hora:{" "}
+          <span className={styles.textBold}>
+            {formatHourlyRate(pricingResult.hourlyRate)}
+          </span>
         </p>
       </div>
 
-      <h3>Desglose del Cálculo</h3>
+      <h3 className={styles.title}>Desglose del cálculo</h3>
       <BreakdownTable breakdown={pricingResult.breakdown} />
 
       {comparison && (
         <>
-          <h3>Comparación con tu precio esperado</h3>
+          <h3 className={styles.title}>Comparación con tu precio</h3>
           <ComparisonCard comparison={comparison} />
         </>
       )}
 
-      <div>
-        <p>¿Cómo se obtuvo este resultado?</p>
+      <div className={styles.explanation}>
+        <p className={styles.textBoldBlack}>¿Cómo se obtuvo este resultado?</p>
         <p>
           Este cálculo parte de tus ingresos deseados, gastos mensuales, horas
           facturables y tiempo estimado del proyecto para obtener una
@@ -44,7 +46,7 @@ export default function Result({ pricingResult, comparison }: ResultProps) {
         </p>
       </div>
 
-      <div>
+      <div className={styles.disclaimer}>
         <p>ⓘ</p>
         <p>
           Este resultado es una recomendación. Factores como experiencia,

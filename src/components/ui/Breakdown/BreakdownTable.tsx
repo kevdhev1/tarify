@@ -13,47 +13,67 @@ interface BreakdownTableProps {
 
 export default function BreakdownTable({ breakdown }: BreakdownTableProps) {
   return (
-    <table className={styles.breakdown}>
+    <table className={styles.table}>
       <tbody>
-        <tr>
+        <tr className={styles.row}>
           <td>Ingreso mensual deseado</td>
-          <td>{formatCurrency(breakdown.desiredIncome)}</td>
+          <td className={styles.boldText}>
+            {formatCurrency(breakdown.desiredIncome)}
+          </td>
         </tr>
-        <tr>
+        <tr className={styles.row}>
           <td>Gastos mensuales</td>
-          <td>{formatCurrency(breakdown.monthlyExpenses)}</td>
+          <td className={styles.boldText}>
+            {formatCurrency(breakdown.monthlyExpenses)}
+          </td>
         </tr>
-        <tr>
+        <tr className={styles.row}>
           <td>Ingreso mensual necesario</td>
-          <td>{formatCurrency(breakdown.requiredMonthlyIncome)}</td>
+          <td className={styles.boldText}>
+            {formatCurrency(breakdown.requiredMonthlyIncome)}
+          </td>
         </tr>
-        <tr>
+        <tr className={styles.row}>
           <td>Horas facturables</td>
-          <td>{formatHours(breakdown.billableHours)}</td>
+          <td className={styles.boldText}>
+            {formatHours(breakdown.billableHours)}
+          </td>
         </tr>
-        <tr>
+        <tr className={styles.row}>
           <td>Tarifa base</td>
-          <td>{formatHourlyRate(breakdown.baseHourlyRate)}</td>
+          <td className={styles.boldText}>
+            {formatHourlyRate(breakdown.baseHourlyRate)}
+          </td>
         </tr>
-        <tr>
+        <tr className={styles.row}>
           <td>Margen aplicado</td>
-          <td>{formatPercentage(breakdown.safetyMarginRate)}</td>
+          <td className={styles.boldText}>
+            {formatPercentage(breakdown.safetyMarginRate)}
+          </td>
         </tr>
-        <tr>
+        <tr className={styles.row}>
           <td>Impuestos aplicados</td>
-          <td>{formatPercentage(breakdown.incomeTaxRate)}</td>
+          <td className={styles.boldText}>
+            {formatPercentage(breakdown.incomeTaxRate)}
+          </td>
         </tr>
-        <tr>
+        <tr className={styles.row}>
           <td>Tarifa final</td>
-          <td>{formatCurrency(breakdown.hourlyRate)}</td>
+          <td className={styles.boldText}>
+            {formatCurrency(breakdown.hourlyRate)}
+          </td>
         </tr>
-        <tr>
-          <td>Horas estimadas del proyecto</td>
-          <td>{formatHours(breakdown.projectHours)}</td>
+        <tr className={styles.row}>
+          <td>Horas estimadas</td>
+          <td className={styles.boldText}>
+            {formatHours(breakdown.projectHours)}
+          </td>
         </tr>
-        <tr>
+        <tr className={styles.row}>
           <td>Precio sostenible</td>
-          <td>{formatCurrency(breakdown.sustainableProjectPrice)}</td>
+          <td className={styles.boldText}>
+            {formatCurrency(breakdown.sustainableProjectPrice)}
+          </td>
         </tr>
       </tbody>
     </table>

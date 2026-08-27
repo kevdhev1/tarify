@@ -1,8 +1,7 @@
 export default function ArrowUp() {
   return (
     <svg
-      width="24"
-      height="24"
+      className="card-icon"
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"

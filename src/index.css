@@ -7,8 +7,14 @@
     --color-primary: #2563eb;
     --color-primary-hover: #1d4ed8;
     --color-border: #e2e8f0;
-    --color-danger: #ef4444;
-    --color-success: #22c55e;
+    --redCard-bg: #fee2e2;
+    --yellowCard-bg: #fef3c7;
+    --greenCard-bg: #dcfce7;
+    --blueCard-bg: #dbeafe;
+    --redCard-color: #dc2626;
+    --yellowCard-color: #d97706;
+    --greenCard-color: #16a34a;
+    --blueCard-color: #2563eb;
 
     --shadow-soft:
         0 1px 2px rgba(15, 23, 42, 0.04), 0 4px 16px rgba(15, 23, 42, 0.06);
@@ -37,6 +43,11 @@ ul {
     width: 40px;
     height: 40px;
     color: #fff;
+}
+
+.card-icon {
+    width: 30px;
+    height: 30px;
 }
 
 .footer-icon {
