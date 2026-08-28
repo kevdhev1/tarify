@@ -22,7 +22,7 @@
     background-color: var(--color-primary);
     color: white;
     padding: 1.5rem;
-    border-radius: 15px;
+    border-radius: 20px;
     gap: 0.2rem;
     margin-bottom: 1.5rem;
 }
@@ -73,4 +73,33 @@
     border: 1px solid var(--color-border);
     border-radius: 15px;
     box-shadow: var(--shadow-soft);
+}
+
+/* ===== TABLET ===== */
+@media (min-width: 768px) {
+    .result {
+        width: 650px;
+        padding: 1.3rem 1.5rem;
+    }
+
+    .sustainablePrice {
+        font-size: 0.9rem;
+    }
+
+    .hourlyRateText {
+        max-width: max-content;
+        font-size: 1rem;
+    }
+
+    .explanation {
+        font-size: 1rem;
+    }
+
+    .textBoldBlack {
+        align-self: flex-start;
+    }
+
+    .disclaimer{
+        font-size: 1rem;
+    }
 }

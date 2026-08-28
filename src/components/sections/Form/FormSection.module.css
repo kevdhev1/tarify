@@ -17,3 +17,15 @@
 .description {
     margin-bottom: 1.5rem;
 }
+
+/* ===== TABLET ===== */
+@media (min-width: 768px) {
+    .formSection {
+        width: 650px;
+        padding: 1.3rem 1.5rem;
+    }
+
+    .fullWidth {
+        grid-column: span 2;
+    }
+}

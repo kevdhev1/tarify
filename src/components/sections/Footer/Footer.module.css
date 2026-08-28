@@ -10,5 +10,15 @@
 
 .social {
     display: flex;
+    align-items: center;
     gap: 0.5rem;
+}
+
+/* ===== TABLET ===== */
+@media (min-width: 768px) {
+    .footer{
+        flex-direction: row;
+        justify-content: space-between;
+        width: 650px;
+    }
 }

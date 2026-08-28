@@ -59,3 +59,11 @@
 .percentage {
     font-weight: bold;
 }
+
+/* ===== TABLET ===== */
+@media (min-width: 768px) {
+    .card{
+        padding: 1rem;
+        font-size: 1.1rem;
+    }
+}

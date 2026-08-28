@@ -16,3 +16,17 @@
     font-weight: bold;
     font-size: 1.1rem;
 }
+
+/* ===== TABLET ===== */
+@media (min-width: 768px) {
+    .pricingForm {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.3rem 1.5rem;
+    }
+
+    .pricingForm > :nth-child(7),
+    .calculateBtn {
+        grid-column: span 2;
+    }
+}

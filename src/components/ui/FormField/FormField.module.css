@@ -77,7 +77,18 @@
     box-shadow: var(--shadow-soft);
 }
 
+.error{
+    color: red;
+}
+
 .inputError {
     border: 1px solid red;
     box-shadow: var(--shadow-soft);
+}
+
+/* ===== TABLET ===== */
+@media (min-width: 768px) {
+    .label {
+        font-size: 1rem;
+    }
 }
