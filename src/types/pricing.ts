@@ -48,6 +48,5 @@ type ComparisonColor = "red" | "yellow" | "green" | "blue";
 export interface PriceComparison {
   differencePercentage: number;
   category: string;
-  justification: string;
   color: ComparisonColor;
 }

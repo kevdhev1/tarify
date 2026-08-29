@@ -40,9 +40,10 @@ export default function Result({ pricingResult, comparison }: ResultProps) {
       <div className={styles.explanation}>
         <p className={styles.textBoldBlack}>¿Cómo se obtuvo este resultado?</p>
         <p>
-          Este cálculo parte de tus ingresos deseados, gastos mensuales, horas
-          facturables y tiempo estimado del proyecto para obtener una
-          recomendación de precio sostenible.
+          La tarifa sostenible se obtiene a partir del ingreso que necesitas generar
+          cada mes y de las horas que realmente puedes facturar. Sobre esa tarifa se
+          aplican el margen de seguridad y el ajuste de impuestos para obtener un
+          precio que cubra tus necesidades.
         </p>
       </div>
 

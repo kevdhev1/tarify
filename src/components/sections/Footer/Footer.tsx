@@ -11,17 +11,17 @@ export default function Footer() {
       </p>
       <ul className={styles.social}>
         <li>
-          <a href="#">
+          <a href="https://www.linkedin.com/in/kevdhev/" target="_blank">
             <LinkedinIcon />
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="https://x.com/kevdhev1" target="_blank">
             <TwitterIcon />
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="https://github.com/kevdhev1/tarify" target="_blank">
             <GithubIcon />
           </a>
         </li>

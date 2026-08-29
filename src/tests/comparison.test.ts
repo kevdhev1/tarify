@@ -9,10 +9,6 @@ import {
   COLOR_GREEN,
   COLOR_RED,
   COLOR_YELLOW,
-  JUSTIFICATION_ABOVE,
-  JUSTIFICATION_SLIGHTLY_BELOW,
-  JUSTIFICATION_VERY_BELOW,
-  JUSTIFICATION_VERY_CLOSE,
 } from "@/constants/constants";
 
 describe("comparePrices", () => {
@@ -21,7 +17,6 @@ describe("comparePrices", () => {
 
     expect(result.differencePercentage).toBe(-20);
     expect(result.category).toBe(CATEGORY_VERY_BELOW);
-    expect(result.justification).toBe(JUSTIFICATION_VERY_BELOW);
     expect(result.color).toBe(COLOR_RED);
   });
 
@@ -30,7 +25,6 @@ describe("comparePrices", () => {
 
     expect(result.differencePercentage).toBe(-10);
     expect(result.category).toBe(CATEGORY_SLIGHTLY_BELOW);
-    expect(result.justification).toBe(JUSTIFICATION_SLIGHTLY_BELOW);
     expect(result.color).toBe(COLOR_YELLOW);
   });
 
@@ -39,7 +33,6 @@ describe("comparePrices", () => {
 
     expect(result.differencePercentage).toBeCloseTo(-5.1, 1);
     expect(result.category).toBe(CATEGORY_SLIGHTLY_BELOW);
-    expect(result.justification).toBe(JUSTIFICATION_SLIGHTLY_BELOW);
     expect(result.color).toBe(COLOR_YELLOW);
   });
 
@@ -48,7 +41,6 @@ describe("comparePrices", () => {
 
     expect(result.differencePercentage).toBe(-5);
     expect(result.category).toBe(CATEGORY_VERY_CLOSE);
-    expect(result.justification).toBe(JUSTIFICATION_VERY_CLOSE);
     expect(result.color).toBe(COLOR_GREEN);
   });
 
@@ -57,7 +49,6 @@ describe("comparePrices", () => {
 
     expect(result.differencePercentage).toBe(5);
     expect(result.category).toBe(CATEGORY_VERY_CLOSE);
-    expect(result.justification).toBe(JUSTIFICATION_VERY_CLOSE);
     expect(result.color).toBe(COLOR_GREEN);
   });
 
@@ -66,7 +57,6 @@ describe("comparePrices", () => {
 
     expect(result.differencePercentage).toBe(6);
     expect(result.category).toBe(CATEGORY_ABOVE);
-    expect(result.justification).toBe(JUSTIFICATION_ABOVE);
     expect(result.color).toBe(COLOR_BLUE);
   });
 });

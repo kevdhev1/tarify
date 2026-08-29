@@ -16,18 +16,6 @@ export const CATEGORY_VERY_CLOSE = "Muy cercano al precio sostenible";
 export const CATEGORY_ABOVE = "Por encima del precio sostenible";
 
 // ==========================================================
-// Price comparison justifications
-// ==========================================================
-
-export const JUSTIFICATION_VERY_BELOW =
-  "Ese precio probablemente no cubra tus objetivos económicos.";
-export const JUSTIFICATION_SLIGHTLY_BELOW =
-  "El precio está algo por debajo del recomendado.";
-export const JUSTIFICATION_VERY_CLOSE =
-  "El precio es coherente con el cálculo realizado.";
-export const JUSTIFICATION_ABOVE = "El precio está por encima del recomendado.";
-
-// ==========================================================
 // Price comparison colors
 // ==========================================================
 
