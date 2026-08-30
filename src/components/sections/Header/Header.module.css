@@ -24,3 +24,14 @@
 .description {
     text-align: center;
 }
+
+/* ===== DESKTOP ===== */
+@media (min-width: 1024px) {
+    .title {
+        font-size: 2.3rem;
+    }
+
+    .description {
+        font-size: 1.2rem;
+    }
+}

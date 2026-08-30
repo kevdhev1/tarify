@@ -103,3 +103,30 @@
         font-size: 1rem;
     }
 }
+
+/* ===== DESKTOP ===== */
+@media (min-width: 1024px) {
+    .result {
+        width: 850px;
+    }
+
+    .title {
+        font-size: 1.2rem;
+    }
+
+    .sustainablePrice {
+        font-size: 1rem;
+    }
+
+    .mainData h2 {
+        font-size: 3.5rem;
+    }
+
+    .hourlyRateText {
+        font-size: 1.1rem;
+    }
+
+    .explanation {
+        font-size: 1rem;
+    }
+}

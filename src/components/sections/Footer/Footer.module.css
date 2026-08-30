@@ -22,3 +22,10 @@
         width: 650px;
     }
 }
+
+/* ===== DESKTOP ===== */
+@media (min-width: 1024px) {
+    .footer{
+        width: 850px;
+    }
+}

@@ -30,3 +30,10 @@
         grid-column: span 2;
     }
 }
+
+/* ===== DESKTOP ===== */
+@media (min-width: 1024px) {
+    .pricingForm > :nth-child(7) {
+        grid-column: span 1;
+    }
+}

@@ -29,3 +29,18 @@
         grid-column: span 2;
     }
 }
+
+/* ===== DESKTOP ===== */
+@media (min-width: 1024px) {
+    .formSection {
+        width: 850px;
+    }
+
+    .title {
+        font-size: 1.2rem;
+    }
+
+    .description {
+        font-size: 1.1rem;
+    }
+}
