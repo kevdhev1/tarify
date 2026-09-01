@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Header from "@/components/sections/Header/Header";
 import FormSection from "@/components/sections/Form/FormSection";
 import Result from "@/components/sections/Result/Result";
@@ -10,6 +10,15 @@ export default function App() {
     null,
   );
   const [comparison, setComparison] = useState<PriceComparison | undefined>();
+
+  useEffect(() => {
+    if (!pricingResult) return;
+
+    document.getElementById("result")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  }, [pricingResult]);
 
   return (
     <>

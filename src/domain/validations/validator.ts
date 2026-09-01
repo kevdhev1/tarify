@@ -16,11 +16,11 @@ export function validatePricingForm(
 
   if (desiredIncome === null || desiredIncome <= 0) {
     errors.desiredIncome =
-      "El ingreso mensual deseado debe ser un número mayor a 0.";
+      "El ingreso deseado debe ser un número mayor a 0.";
   }
 
   if (monthlyExpenses === null || monthlyExpenses < 0) {
-    errors.monthlyExpenses = "Los gastos mensuales no pueden ser menores a 0.";
+    errors.monthlyExpenses = "Los gastos no pueden ser menores a 0.";
   }
 
   if (billableHours !== null) {
@@ -36,7 +36,7 @@ export function validatePricingForm(
     projectHours <= 0
   ) {
     errors.projectHours =
-      "Las horas estimadas del proyecto deben ser un número entero mayor a 0.";
+      "Las horas estimadas deben ser un número entero mayor a 0.";
   }
 
   if (
@@ -44,12 +44,12 @@ export function validatePricingForm(
     (safetyMarginRate < 0 || safetyMarginRate > 100)
   ) {
     errors.safetyMarginRate =
-      "El margen de seguridad debe estar entre 0% y 100% (inclusive).";
+      "El margen debe estar entre 0% y 100% (inclusive).";
   }
 
   if (incomeTaxRate !== null && (incomeTaxRate < 0 || incomeTaxRate >= 100)) {
     errors.incomeTaxRate =
-      "Los impuestos sobre ingresos deben estar entre 0% y 99.99% (inclusive).";
+      "Los impuestos deben estar entre 0% y 99.99% (inclusive).";
   }
 
   if (expectedPrice !== null && expectedPrice <= 0) {

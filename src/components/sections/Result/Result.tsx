@@ -13,7 +13,7 @@ export default function Result({ pricingResult, comparison }: ResultProps) {
   if (!pricingResult) return null;
 
   return (
-    <section className={styles.result}>
+    <section id="result" className={styles.result}>
       <h3 className={styles.title}>Resultado</h3>
 
       <div className={styles.mainData}>
