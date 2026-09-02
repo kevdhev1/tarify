@@ -27,7 +27,7 @@ describe("validatePricingForm", () => {
     const errors = validatePricingForm(form);
 
     expect(errors).toEqual({
-      desiredIncome: "El ingreso mensual deseado debe ser un número mayor a 0.",
+      desiredIncome: "El ingreso deseado debe ser un número mayor a 0.",
     });
   });
 
@@ -40,7 +40,7 @@ describe("validatePricingForm", () => {
     const errors = validatePricingForm(form);
 
     expect(errors).toEqual({
-      monthlyExpenses: "Los gastos mensuales no pueden ser menores a 0.",
+      monthlyExpenses: "Los gastos no pueden ser menores a 0.",
     });
   });
 
@@ -81,8 +81,7 @@ describe("validatePricingForm", () => {
     const errors = validatePricingForm(form);
 
     expect(errors).toEqual({
-      projectHours:
-        "Las horas estimadas del proyecto deben ser un número entero mayor a 0.",
+      projectHours: "Las horas estimadas deben ser un número entero mayor a 0.",
     });
   });
 
@@ -95,8 +94,7 @@ describe("validatePricingForm", () => {
     const errors = validatePricingForm(form);
 
     expect(errors).toEqual({
-      projectHours:
-        "Las horas estimadas del proyecto deben ser un número entero mayor a 0.",
+      projectHours: "Las horas estimadas deben ser un número entero mayor a 0.",
     });
   });
 
@@ -109,8 +107,7 @@ describe("validatePricingForm", () => {
     const errors = validatePricingForm(form);
 
     expect(errors).toEqual({
-      safetyMarginRate:
-        "El margen de seguridad debe estar entre 0% y 100% (inclusive).",
+      safetyMarginRate: "El margen debe estar entre 0% y 100% (inclusive).",
     });
   });
 
@@ -123,8 +120,7 @@ describe("validatePricingForm", () => {
     const errors = validatePricingForm(form);
 
     expect(errors).toEqual({
-      incomeTaxRate:
-        "Los impuestos sobre ingresos deben estar entre 0% y 99.99% (inclusive).",
+      incomeTaxRate: "Los impuestos deben estar entre 0% y 99.99% (inclusive).",
     });
   });
 
